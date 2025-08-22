@@ -166,15 +166,26 @@ input, select, textarea {
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
-		color: #262424;
+		color: #f2849e;
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: #ffffff;
+			color: #ffffff;
+		}
+	#header a {
+		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		transition: border-bottom-color 0.2s ease, color 0.2s ease;
+		text-decoration: none;
+		color: #ffffff !important;
+		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		}
+	#header a:hover, #header a:active {
 			color: #f2849e !important;
 		}
-
 	strong, b {
 		font-weight: 900;
 	}
