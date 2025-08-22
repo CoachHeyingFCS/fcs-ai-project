@@ -6,7 +6,28 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* Make the image fill the tile box without shrinking other boxes */
 
+.tiles article > .image {
+    width: 100%;
+    height: 100%;
+    min-height: 220px; /* Ensures a minimum height for all boxes */
+    max-height: 320px; /* Optional: set a max height for large screens */
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
+    border-radius: 0.75em;
+}
+
+.tiles article > .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.75em;
+    box-shadow: 0 2px 16px #232b45;
+}
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
