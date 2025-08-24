@@ -25,11 +25,11 @@
       color: var(--text-light);
       line-height: 1.6;
 
-        /* Background image */
-    background-image: url('https://images.unsplash.com/photo-1589306994259-a806e14b775a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
-	background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+      /* Background image */
+      background-image: url('https://images.unsplash.com/photo-1589306994259-a806e14b775a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjBibHVlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     a {
@@ -39,30 +39,32 @@
     }
     a:hover { color: #58a6ff; }
 
-    /* Header */
-    header {
-      background: var(--bg-card);
+    /* Navbar */
+    nav {
+      background: rgba(10, 15, 28, 0.95);
+      backdrop-filter: blur(8px);
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 1000;
     }
 
-    header .logo {
+    nav .logo {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
+      gap: 10px;
+      font-size: 1.3rem;
       font-weight: bold;
-      font-size: 1.2rem;
-      color: var(--text-light);
+      color: #4da6ff;
+      text-decoration: none;
     }
-    header .logo img {
-      width: 40px;
-      height: 40px;
+
+    nav .logo img {
+      height: 32px;
     }
 
     nav ul {
@@ -72,14 +74,16 @@
       margin: 0;
       padding: 0;
     }
-    nav a {
-      font-weight: 500;
-      padding: 0.4rem 0.8rem;
-      border-radius: var(--radius);
+
+    nav ul li a {
+      color: #e0e6ed;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
     }
-    nav a:hover {
-      background: var(--accent);
-      color: #fff;
+
+    nav ul li a:hover {
+      color: #f38c8c;
     }
 
     /* Page Title */
@@ -191,23 +195,19 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
+  <!-- Navbar -->
+  <nav>
     <a href="../index.html" class="logo">
       <img src="../images/Innovation Academy Phoenix.svg" alt="Logo">
-      <span>AI Project</span>
+      Phantom
     </a>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../generic.html">Ipsum</a></li>
-        <li><a href="health.html">General</a></li>
-        <li><a href="health_works_cited_2.html">Works Cited</a></li>
-        <li><a href="health_about_us_2.html">About Us</a></li>
-        <li><a href="../elements.html">Elements</a></li>
-      </ul>
-    </nav>
-  </header>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="health.html">General</a></li>
+      <li><a href="health_about_us_2.html">About Us</a></li>
+      <li><a href="health_works_cited_2.html">Works Cited</a></li>
+    </ul>
+  </nav>
 
   <!-- Page Title -->
   <section class="page-title">
@@ -235,23 +235,8 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <h2>Get in Touch</h2>
-    <form method="post" action="#">
-      <input type="text" name="name" placeholder="Name">
-      <input type="email" name="email" placeholder="Email">
-      <textarea name="message" placeholder="Message"></textarea>
-      <input type="submit" value="Send" class="primary">
-    </form>
-
-    <h2>Follow Us</h2>
-    <div class="icons">
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-github"></i></a>
-    </div>
-    <p>&copy; Untitled. All rights reserved. Design inspired by HTML5 UP.</p>
+ <footer>
+    <p>&copy; 2025 Phantom. All rights reserved. | Design inspired by <a href="http://html5up.net">HTML5 UP</a></p>
   </footer>
 
 </body>
