@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI in the Mathematics Industry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    :root {
+      --primary: #2d3e50;
+      --accent: #00c3ff;
+      --bg: #f4f8fb;
+      --card: #fff;
+      --shadow: 0 4px 24px rgba(44,62,80,0.08);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+    }
+    header {
+      background: linear-gradient(90deg, #2d3e50 60%, #00c3ff 100%);
+      color: #fff;
+      padding: 2.5rem 0 2rem 0;
+      text-align: center;
+      position: relative;
+    }
+    header .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    header .logo i {
+      font-size: 2.2rem;
+      color: #00c3ff;
+      background: #fff;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffe082;
+    }
+    .hero {
+      margin: 2rem auto 0 auto;
+      max-width: 800px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      border-radius: 1.5rem;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      animation: fadeIn 1.2s;
+    }
+    .hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 0;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+    section {
+      background: var(--card);
+      box-shadow: var(--shadow);
+      border-radius: 1.2rem;
+      padding: 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 1s;
+    }
+    section h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--accent);
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    ul li {
+      margin-bottom: 0.7rem;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0 1rem 0;
+      margin-top: 2rem;
+      border-radius: 1.2rem 1.2rem 0 0;
+    }
+    .socials {
+      margin: 1rem 0;
+    }
+    .socials a {
+      color: #00c3ff;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover {
+      color: #ffe082;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-brain"></i> AI & Mathematics
+    </div>
+    <nav>
+      <a href="#usages">Usages</a>
+      <a href="#impact">Impact</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#bias">Bias</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h1>The Effect of AI on the Mathematics Industry</h1>
+    <p>
+      Explore how artificial intelligence is transforming mathematics, from research and education to privacy and ethics.
+    </p>
+  </div>
+  <main>
+    <section id="usages">
+      <h2><i class="fas fa-cogs"></i> AI Usages in Mathematics</h2>
+      <ul>
+        <li>Automated theorem proving and mathematical discovery</li>
+        <li>Symbolic computation and algebraic manipulation</li>
+        <li>Data analysis and pattern recognition in large datasets</li>
+        <li>Optimization and numerical methods</li>
+        <li>Personalized learning and tutoring systems</li>
+        <li>Assisting in mathematical research and literature review</li>
+      </ul>
+    </section>
+    <section id="impact">
+      <h2><i class="fas fa-chart-line"></i> Industry Impact</h2>
+      <ul>
+        <li>Accelerated research and discovery of new mathematical results</li>
+        <li>Enhanced productivity for mathematicians and educators</li>
+        <li>Broader access to advanced mathematical tools and resources</li>
+        <li>Transformation of mathematical education through adaptive learning</li>
+        <li>Collaboration between mathematicians and AI systems</li>
+      </ul>
+    </section>
+    <section id="privacy">
+      <h2><i class="fas fa-user-secret"></i> Privacy Concerns</h2>
+      <ul>
+        <li>Use of personal data in AI-driven educational platforms</li>
+        <li>Data security in cloud-based mathematical tools</li>
+        <li>Unintended exposure of proprietary research or sensitive information</li>
+        <li>Lack of transparency in data usage and storage</li>
+      </ul>
+    </section>
+    <section id="bias">
+      <h2><i class="fas fa-balance-scale"></i> Bias in AI</h2>
+      <ul>
+        <li>Bias in training data leading to skewed results or recommendations</li>
+        <li>Underrepresentation of certain mathematical fields or communities</li>
+        <li>Potential reinforcement of existing inequalities in education and research</li>
+        <li>Challenges in ensuring fairness and objectivity in AI-driven assessments</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="socials">
+      <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    &copy; 2025 AI & Mathematics Information Hub
+  </footer>
+</body>
+</html>
