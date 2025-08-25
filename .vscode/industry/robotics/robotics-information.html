@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Robotics - Information</title>
+    <link rel="icon" type="image/x-icon" href="../../images/Innovation Academy Phoenix.svg">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="robotics.css" />
+    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="navigation">
+            <a href="../../index.html">Home</a>
+            <a href="robotics-landingpage.html">Landing</a>
+            <a href="robotics-information.html" class="active">Information</a>
+            <a href="robotics-aboutme.html">About Us</a>
+        </nav>
+    </header>
+
+     <section class="parallax">
+        <img src="../../images/robotics/info/Mars.png" id="parallax-1">
+        <h2 id="text-information">AI in Mars<br>Exploration</h2>
+        <img src="../../images/robotics/info/Rover.png" id="parallax-6">
+    </section>
+
+    <section class="sec ai-section">
+        <!-- Application -->
+        <div class="ai-block fade-in" style="animation-delay:0.1s;">
+            <h2 class="ai-title">Application: Perseverance Rover & Autonomous AI</h2>
+            <div class="ai-desc">
+                <p>
+                    <span class="ai-highlight">NASA's Perseverance rover</span> is a landmark in autonomous robotics, using artificial intelligence to navigate the Martian surface, select scientific targets, and analyze geological samples.
+                    Its onboard AI—terrain-relative navigation, autonomous hazard avoidance, on-board planning, and computer vision—lets the rover operate with minimal human intervention across long communication gaps, maximizing safety and science return.
+                    Perseverance also uses machine learning for image interpretation, rock/soil classification, and prioritizing samples for collection. These capabilities build on decades of research in probabilistic robotics, SLAM, A* path planning, Bayesian estimation, and stereo vision.
+                </p>
+            </div>
+        </div>
+
+        <!-- Data & Security Issues (expanded) -->
+        <div class="ai-block fade-in" style="animation-delay:0.2s;">
+            <h2 class="ai-title">Data & Security Issues</h2>
+            <div class="ai-desc">
+                <ul class="ai-list">
+                    <li><strong>Data Integrity & Drift:</strong> Sensor fusion (IMU, Navcam/Hazcam, terrain maps) depends on precise calibration. Compression artifacts, cosmic-ray bit flips, or thermal drift can corrupt pose estimates and misclassify hazards, impacting both safety and science yield.</li>
+                    <li><strong>Uplink/Downlink Reliability:</strong> Long delays and limited bandwidth force aggressive compression and prioritization. Packet loss or re-ordering can drop critical context (e.g., partial panoramas), biasing planning or degrading later ML training data.</li>
+                    <li><strong>Map & Model Poisoning:</strong> Although deep-space comms are authenticated, any compromised preprocessing chain (e.g., an Earth-side tool that builds reference maps) could introduce subtle hazards, steering TRN or planners toward suboptimal zones.</li>
+                    <li><strong>Adversarial/Edge-Case Vision:</strong> Unusual lighting, dust, shadows, and specular rock faces can fool edge detectors and stereo matching, creating phantom obstacles or hiding real ones, especially during low-sun angles or dust storms.</li>
+                    <li><strong>Cybersecurity:</strong> Command sequences and ephemerides must be validated end-to-end. Replay or spoofing attacks are extremely unlikely but mitigated with cryptographic checks and strict fault-protection modes.</li>
+                    <li><strong>Provenance & Auditability:</strong> Science claims require traceable data lineage. Without rigorous metadata and hashes, it’s hard to prove which models/thresholds produced which actions and why specific samples were prioritized.</li>
+                    <li><strong>Operational Privacy (Future Crewed Sites):</strong> In a settlement, autonomous eyes everywhere may capture crew and habitat activity. Governance needs clear policies on retention, access, and masking of human imagery.</li>
+                    <li><strong>Fail-Safe Degradation:</strong> When confidence drops (e.g., sand occluding cameras), systems should degrade gracefully—slower speeds, higher margins, or human-in-the-loop—rather than silently extrapolating bad data.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Positive Impact (expanded) -->
+        <div class="ai-block fade-in" style="animation-delay:0.3s;">
+            <h2 class="ai-title">Positive Impact</h2>
+            <div class="ai-desc">
+                <ul class="ai-list">
+                    <li><strong>Science Acceleration:</strong> Autonomous target selection (e.g., ranking rock candidates) boosts the number and diversity of observations per sol, creating richer datasets with fewer idle periods.</li>
+                    <li><strong>Safety & Mission Longevity:</strong> Continuous hazard evaluation reduces incidents, preserving wheels, arms, and instruments—extending mission lifetimes and enabling more ambitious traverses.</li>
+                    <li><strong>Operational Efficiency:</strong> On‑board planning packs tasks optimally around power, thermal, and time constraints, cutting dead time between activities and adapting when conditions change.</li>
+                    <li><strong>Spin-Offs on Earth:</strong> Algorithms for perception, planning, and fault protection translate to autonomous vehicles, mining, precision agriculture, disaster response, and remote inspection robots.</li>
+                    <li><strong>STEM Inspiration & Collaboration:</strong> High-profile robotic missions energize public interest, build international partnerships, and motivate the next generation of engineers and scientists.</li>
+                    <li><strong>Environmental Stewardship:</strong> Robotic scouting minimizes human footprints, allowing non‑invasive surveys and careful selection of sites for sampling or future infrastructure.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Negative Impact (expanded) -->
+        <div class="ai-block fade-in" style="animation-delay:0.4s;">
+            <h2 class="ai-title">Negative Impact</h2>
+            <div class="ai-desc">
+                <ul class="ai-list">
+                    <li><strong>Access & Equity:</strong> The capital intensity of interplanetary robotics can concentrate capability within a few nations/agencies, widening participation gaps in space science and technology.</li>
+                    <li><strong>Opportunity Costs:</strong> Large budgets allocated to deep‑space robotics may constrain funding for urgent Earth-bound needs (climate resilience, public health) without careful portfolio balance.</li>
+                    <li><strong>Cultural Representation:</strong> Agenda‑setting by a small set of institutions can shape the scientific questions asked, media narratives, and public imagination of what “counts” as important exploration.</li>
+                    <li><strong>Planetary Protection Risks:</strong> Even with stringent protocols, hardware and sampling activities carry non‑zero risk of forward contamination, complicating life‑detection results and ethics.</li>
+                    <li><strong>Environmental Externalities:</strong> Launch emissions and hardware end‑of‑life (landers/orbiters/debris) raise sustainability questions that will grow with mission frequency.</li>
+                    <li><strong>Automation Over‑Reliance:</strong> Excessive trust in autonomy may discourage necessary manual checks or reduce diversity in sampling strategies, narrowing scientific discovery.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biases & Limitations (expanded) -->
+        <!-- Biases & Limitations -->
+<div class="ai-block fade-in" style="animation-delay:0.5s;">
+    <h2 class="ai-title">Biases & Limitations</h2>
+    <div class="ai-desc">
+        <ul class="ai-list">
+            <li><strong>Landing Bias:</strong> Terrain-relative navigation favors flat and “safe” terrain, which could cluster landings in predictable areas and bypass geologically rich but risky zones.</li>
+            <li><strong>Mobility Bias:</strong> The rover’s clearance and slope thresholds avoid uncertain terrain, which protects hardware but can leave rough or steep areas unexplored.</li>
+            <li><strong>Science Bias:</strong> Automated target selection (like AEGIS) prioritizes high-contrast or visually obvious rocks, which may cause subtle biosignatures to be overlooked.</li>
+            <li><strong>Scheduling Bias:</strong> On-board planners tend to choose shorter, lower-risk tasks to maximize productivity, pushing longer-term or more ambitious science goals aside.</li>
+            <li><strong>Dataset Bias:</strong> Models trained on Earth analogs or past Mars imagery can underperform when exposed to new geology, lighting, or dust conditions.</li>
+            <li><strong>Decision Transparency:</strong> Without interpretable logs, it is difficult to reconstruct why certain routes or targets were chosen, complicating accountability.</li>
+        </ul>
+    </div>
+</div>
+
+
+        <!-- Historical Usage (kept) -->
+        <div class="ai-block fade-in" style="animation-delay:0.6s;">
+            <h2 class="ai-title">Historical Usage</h2>
+            <div class="ai-desc">
+                <p>
+                    Mars robotics evolved from <span class="ai-highlight">Sojourner</span> (basic hazard checks) to <span class="ai-highlight">Spirit</span> and <span class="ai-highlight">Opportunity</span> (more robust autonomy),
+                    to <span class="ai-highlight">Curiosity</span> (advanced perception and target selection), culminating in <span class="ai-highlight">Perseverance</span> with TRN‑assisted landing,
+                    long‑range AutoNav, and on‑board prioritization of science. Across missions, the trend is clear: more decisions move on‑board, with humans providing high‑level goals and oversight.
+                </p>
+            </div>
+        </div>
+
+        <!-- Milestones (kept, using your ai-timeline structure) -->
+        <div class="ai-block fade-in" style="animation-delay:0.7s;">
+            <h2 class="ai-title">Milestones in AI‑Driven Mars Operations</h2>
+            <div class="ai-timeline">
+                <div class="ai-timeline-event">
+                    <div class="ai-timeline-year-box"><span class="ai-timeline-year">1997</span></div>
+                    <div class="ai-timeline-dot"></div>
+                    <div class="ai-timeline-desc">Sojourner demonstrates first rover autonomy on Mars (basic hazard checks and supervised driving).</div>
+                </div>
+                <div class="ai-timeline-event">
+                    <div class="ai-timeline-year-box"><span class="ai-timeline-year">2004–2010</span></div>
+                    <div class="ai-timeline-dot"></div>
+                    <div class="ai-timeline-desc">Spirit & Opportunity expand autonomous navigation and long‑duration operations in harsh environments.</div>
+                </div>
+                <div class="ai-timeline-event">
+                    <div class="ai-timeline-year-box"><span class="ai-timeline-year">2012–2019</span></div>
+                    <div class="ai-timeline-dot"></div>
+                    <div class="ai-timeline-desc">Curiosity matures vision‑based driving and autonomous targeting (AEGIS) during comms gaps.</div>
+                </div>
+                <div class="ai-timeline-event">
+                    <div class="ai-timeline-year-box"><span class="ai-timeline-year">2021–Present</span></div>
+                    <div class="ai-timeline-dot"></div>
+                    <div class="ai-timeline-desc">Perseverance uses TRN for precise landing at Jezero, scales AutoNav + safety checking, and optimizes sols with on‑board planning.</div>
+                </div>
+                <div class="ai-timeline-event">
+                    <div class="ai-timeline-year-box"><span class="ai-timeline-year">Future</span></div>
+                    <div class="ai-timeline-dot"></div>
+                    <div class="ai-timeline-desc">Fleet autonomy for cargo delivery, site prep, ISRU, and habitat maintenance in support of crewed settlements.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Glossary (kept) -->
+        <div class="ai-block fade-in" style="animation-delay:0.8s;">
+            <h2 class="ai-title">Quick Glossary</h2>
+            <div class="ai-desc">
+                <ul class="ai-list">
+                    <li><strong>TRN:</strong> Terrain Relative Navigation for hazard‑aware landing guidance.</li>
+                    <li><strong>AutoNav:</strong> Autonomous navigation and path planning for long traverses.</li>
+                    <li><strong>ACE:</strong> Approximate Clearance Evaluation—conservative safety checker per step.</li>
+                    <li><strong>AEGIS:</strong> Autonomous target selection to boost science during comms gaps.</li>
+                    <li><strong>OBP:</strong> On‑Board Planner; greedily packs tasks within power/time/thermal limits.</li>
+                    <li><strong>SLAM:</strong> Simultaneous Localization and Mapping; builds maps while estimating pose.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Future (kept) -->
+        <div class="ai-block fade-in" style="animation-delay:0.9s;">
+            <h2 class="ai-title">What This Means for a Future Mars Settlement</h2>
+            <div class="ai-desc">
+                <ul class="ai-list">
+                    <li><strong>City Placement:</strong> Early “safe pads” can anchor infrastructure on gentle plains; moving later is expensive—so early AI choices matter.</li>
+                    <li><strong>Access & Services:</strong> Smooth corridors get more roads, power drops, and deliveries; rough districts risk being underserved unless policy intervenes.</li>
+                    <li><strong>Resource Understanding:</strong> If salience and safety dominate, maps may over‑represent easy terrains and miss tucked‑away resources or biosignatures.</li>
+                    <li><strong>Governance:</strong> Treat AI configs like public policy—publish thresholds, rotate sampling priors, audit logs, and invite independent review.</li>
+                    <li><strong>Human‑Robot Teams:</strong> Blend autonomy with expert direction: humans set goals/guardrails; robots adapt on the ground with transparent “why logs.”</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Works Cited (kept) -->
+        <div class="works-cited">
+            <h2>Works Cited</h2>
+            <ol>
+                <li>NASA Mars 2020 Mission, <a href="https://mars.nasa.gov/mars2020/" target="_blank" rel="noopener">mars.nasa.gov/mars2020/</a></li>
+                <li>NASA JPL, <a href="https://www.jpl.nasa.gov/missions/mars-2020-perseverance-rover" target="_blank" rel="noopener">Mars 2020 Perseverance Rover</a></li>
+                <li>Science Robotics, <a href="https://www.science.org/journal/scirobotics" target="_blank" rel="noopener">Mars Perseverance</a></li>
+                <li>Nature, <a href="https://www.nature.com/articles/d41586-021-00541-2" target="_blank" rel="noopener">AI on Mars</a></li>
+                <li>IEEE Spectrum, <a href="https://spectrum.ieee.org/perseverance-rover-ai" target="_blank" rel="noopener">How Perseverance's AI Works</a></li>
+                <li>AGU, <a href="https://agupubs.onlinelibrary.wiley.com/" target="_blank" rel="noopener">Mars Exploration Rovers</a></li>
+                <li>Stanford AI Lab, <a href="https://ai.stanford.edu/" target="_blank" rel="noopener">A* Search</a></li>
+                <li>NASA Planetary Protection, <a href="https://planetaryprotection.nasa.gov/" target="_blank" rel="noopener">planetaryprotection.nasa.gov</a></li>
+                <li>NASA Spinoff, <a href="https://spinoff.nasa.gov/" target="_blank" rel="noopener">spinoff.nasa.gov</a></li>
+                <li>NASA Education, <a href="https://www.nasa.gov/education/" target="_blank" rel="noopener">nasa.gov/education</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <script src="robotics.js"></script>
+</body>
+</html>
