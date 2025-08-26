@@ -12,18 +12,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			h2 {
-				font-family: "Elephant", sans-serif;
-				color: rgb(255, 0, 0);
-			}
-			p {
-				color: rgb(0, 255, 0);
-				font-family: "Aharoni", sans-serif;
-			}
+	<style>
+		body {
+			background-color: rgb(0, 0, 0);
+		}
+
+		h2 {
+			font-family: "arial", sans-serif;
+			color: rgb(0, 0, 255);
+		}
 		
+		p {
+			color: rgb(255, 255, 255);
+			font-family: "arial", sans-serif;
+		}
+		.image.main img {
+			border-style: dotted;
+			border-width: 2px;
+			border-color: rgb(100, 0, 255);
+		}
+		img {
+			border-style: dotted;
+			border-width: 2px;
+			border-color: rgb(100, 0, 255);
+		}
+		h3 {
+			color:rgb(255, 0, 0)
 			
+		}
+	
 		</style>
+			
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -60,25 +79,99 @@
 					<div id="main">
 						<div class="inner">
 
-							<h1>Information Page</h1>
-							<span class="image main"><img src="images/image.png" alt="" /></span>
-							<center><strong><h2>Uses of Artifical Intelligence</h2></strong></center>
-							<p>The Uses of AI Artificial Intelligence in the Legal and Compliance Industry is able to perform many complex tasks, such as reviewing contracts for risks, obligations, and inconsistencies, extracting key clauses and comparing them against regulatory standards, conducting legal research by parsing case law, statutes, and regulations, and predicting case outcomes using historical data and precedent.</p>
+							<center><h1>Information Page</h1></center>
+							<span class="image main"><img src="industry/ai application.jpg" alt="" /></span>
+							<center><strong><h2>COMPAS Overview</h2></strong></center>
+							<ul>
+								<li>COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is a risk assessment software used by courts and correctional departments in the United States.</li>
+								<li>Its primary application is to predict the likelihood that a criminal defendant will re-offend (recidivate). Judges, probation officers, and parole boards use its risk scores to inform critical decisions about bail, sentencing, probation terms, and parole eligibility</li>
+								<li> It is a classic example of a predictive analytics tool designed to add a data-driven, "objective" layer to the criminal justice process.</li>
+							</ul>
+							<center><img src="industry/compas real.jpg" alt=""></center>
+
 							<hr>
-							<center><strong><h2>Real World Application</h2></strong></center>
-							<p>One of the most notable and impactful real-world applications of artificial intelligence in the legal and compliance industry is the use of AI for automated contract review, particularly as demonstrated by the UK-based law firm Shoosmiths. Shoosmiths implemented an AI-powered contract review platform to streamline and enhance the efficiency of its legal operations. The platform utilized natural language processing (NLP) and machine learning algorithms to analyze complex legal agreements. This allowed the firm to review contracts in approximately 3 minutes, achieve 90% accuracy, compared to 86% accuracy by a qualified lawyer, and reduce review time from 4 hours to minutes, significantly cutting labor costs and turnaround time. These capabilities allow law firms and corporate legal departments to reduce manual labor, minimize human error, and accelerate decision-making. A white paper from Stanford Law School highlights how LLMs are being integrated into legal workflows, reshaping the legal profession by improving efficiency and accuracy in tasks like document review and legal research, and its role in enhancing case management and decision-making processes.</p>
+							<center><h2>Potential Data/Security Risks</h2></center>
+							<center><h3>1. Data Quality and Bias</h3></center>
+							<ul>
+								<li>The algorithm relies on historical crime data and a 137-question survey given to defendants</li>
+								<li>Historical crime data is often a reflection of policing biases (e.g., over-policing in certain neighborhoods), meaning the data itself is skewed</li>
+								<li>The survey includes questions about a defendant's family criminal history, financial stability, and social circle, which can proxy for race and socioeconomic status</li>
+								<li>Garbage in, garbage out: if the training data reflects societal biases, the algorithm will learn and amplify them</li>
+							</ul>
 							<hr>
-							<center><strong><h2>Security Issues</h2></strong></center>
-							<p>However, cybersecurity attacks are still a possibility, as the U.S. Congressional Research Service notes that the absence of comprehensive federal AI regulations creates a fragmented landscape, making it harder to enforce cybersecurity standards across jurisdictions. Legal AI systems may also be susceptible to adversarial attacks, where malicious actors manipulate inputs to deceive or corrupt AI outputs. In addition, the CRS report warns that the current patchwork of state-level AI laws complicates compliance and increases exposure to legal risk. This regulatory vacuum can lead to inconsistent data handling practices and inadequate cybersecurity protocols.</p>
+							<center><h3>2. Lack of Transparency</h3></center>
+							<ul>
+								<li>Northpointe (the creator) considered the algorithm a proprietary trade secret</li>
+								<li>This means the exact factors and their weightings are not public.</li>
+								<li>Defendants cannot challenge or even understand the "evidence" against them, violating principles of due process and transparency</li>
+								<li>Judges are also left making life-altering decisions based on a score they cannot explain.</li>
+							</ul>
 							<hr>
-							<center><strong><h2>AI: Ready to Help</h2></strong></center>
-							<p>AI-powered legal tools—such as chatbots, document automation platforms, and predictive analytics—are able to democratize legal knowledge by making it accessible to non-lawyers, reduce costs of legal services, enabling low-income individuals and small businesses to obtain legal help, and streamline compliance for organizations that lack in-house legal teams. This is especially significant in areas where a lack of infrastructure or economic effluence causes money issues and poor lawyers to become less of a burden. The Natural Language Processing (NLP) allows AI systems to interpret legal queries and provide understandable responses, automated document review helps users draft contracts, wills, or complaints without needing a lawyer, and legal triage systems guide users to appropriate legal resources or professionals based on their needs.</p>
+							<center><h3>3. Data Security and Misuse</h3></center>
+							<ul>
+								<li>The sensitive data collected (personal history, criminal records, psychological responses) is a prime target for breaches</li>
+								<li>Furthermore, there is a risk of "function creep," where the data collected for one purpose (recidivism risk) is later used for another, unintended purpose without consent.</li>
+							</ul>
+							<center><img src="industry/bias.webp" alt=""></center>
 							<hr>
-							<center><strong><h2>The Shortcomings</h2></strong></center>
-							<p>However, while the goal is to maximize energy efficiency, legal and compliance systems increasingly rely on AI for automated document review, predictive litigation analytics, and regulatory monitoring and enforcement. These applications require massive computational power, which in turn demands high electricity usage, rare earth minerals for servers and GPUs, and water for cooling data centers. According to a 2025 study from Hanoi Law University published in the International Journal of Law, AI in legal and compliance contexts contributes to electronic waste, unsustainable mineral extraction, and increased greenhouse gas emissions. Another negative effect was COMPAS, an AI-based risk assessment tool used by judges in several U.S. states to predict the likelihood of a defendant reoffending. It is intended to inform decisions about bail, sentencing, and parole. However, multiple academic and government-backed studies have revealed significant racial and age biases in their predictions. A landmark investigation by ProPublica in 2016 found that COMPAS was 77% more likely to assign higher risk scores to African American defendants than to white defendants, even when controlling for prior offenses, age, and gender.</p>
+							<center><h2>Positive Impact </h2></center>	
+							<center><h3>1. Reducing Subjective Bias</h3></center>
+								<ul>
+									<li>The core idea was to counteract known human biases—such as a judge's implicit racial or socioeconomic prejudices—by providing a standardized, data-driven assessment for every defendant. In theory, this would lead to more consistent outcomes.</li>
+								</ul>
+								<hr>
+							<center><h3>2. Improving Efficiency and Public Safety</h3></center>
+							<ul>
+								<li>By accurately identifying individuals who pose a genuine high risk to society, the system could better allocate limited prison and supervisory resources to them.</li>
+								<li>Conversely, it could safely recommend against incarcerating low-risk individuals, reducing prison overcrowding and minimizing the harmful effects of unnecessary imprisonment on individuals and families.</li>
+							</ul>
+							<center><img src="industry/risk management.png" alt=""></center>
 							<hr>
 
-						</div>
+							<center><h2>Negative Impact</h2></center>
+							<center><h3>1. Reinforcement of Systemic Bias</h3></center>
+							<ul>
+								<li>As revealed by ProPublica's investigation, the algorithm was not neutral.</li>
+								<li>It produced significantly more false positives (labeling someone as high-risk when they did not re-offend) for Black defendants and more false negatives (labeling someone as low-risk when they did re-offend) for white defendants</li>
+								<li>This meant it was disproportionately harsh on Black communities, leading to longer sentences and denied paroles based on flawed predictions.</li>
+							</ul>
+							<hr>
+							<center><h3>2. The Objective Facade</h3></center>
+							<ul>
+								<li>Perhaps the most damaging impact was that the algorithm's verdict was perceived as scientific and impartial</li>
+								<li>This "automation bias" caused judges to trust the algorithm's score over their own judgment, lending a powerful, seemingly legitimate cover to deeply biased outcomes</li>
+								<li>This eroded trust in the judicial system and perpetuated a cycle of discrimination on a massive scale</li>
+							</ul>
+							<hr>
+							<center><h3>3. Economic and Social Cost</h3></center>
+							<ul>
+								<li> Individuals incorrectly labeled as high-risk faced devastating consequences: prolonged incarceration, inability to get jobs post-release, and broken families</li>
+								<li>This carries a massive economic cost for the state (cost of incarceration) and for the communities affected, which are deprived of income-earners and parents, further entrenching cycles of poverty and crime.</li>
+							<center><img src="industry/bias real.jpg" alt=""></center>
+								<hr>
+							</ul>
+							<center><h2>Works Cited</h2></center>
+							<ol>
+								<li>Carnegie Mellon University. Homework 12: COMPAS Revisited. Retrieved from
+https://www.stat.cmu.edu/~cshalizi/dm/22/hw/12/hw-12.pdf </li>
+<li>Diefes, Aaron; Liu, Joy; Sauter, Josh. Algorithmic Risk Assessment in Criminal Justice
+Systems: Analyzing Bias in COMPAS. Duke University. Retrieved
+from https://sites.duke.edu/compasriskassessment/ </li>
+<li>Ji, Jessica. The U.S. Government Wants to Go ‘All In’ on AI. There Are Big
+Risks. Center for Security and Emerging Technology, Georgetown University.
+Retrieved from https://cset.georgetown.edu/article/the-u-s-government-wants-togo-all-in-on-ai-there-are-big-risks/ </li>
+<li>Kerry, Cameron F. Protecting Privacy in an AI-Driven World. Brookings Institution.
+Retrieved from https://www.brookings.edu/articles/protecting-privacy-in-an-aidriven-world/ </li>
+<li>King, Jennifer & Meinhardt, Caroline. Privacy in an AI Era: How Do We Protect Our
+Personal Information? Stanford University Human-Centered AI Institute. Retrieved
+from https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-ourpersonal-information </li>
+<li>Washington, Anne L. How to Argue with an Algorithm: Lessons from the COMPASProPublica Debate. University of Colorado Law Review. Retrieved
+from http://ctlj.colorado.edu/wp-content/uploads/2021/02/17.1_4-
+Washington_3.18.19.pdf </li>
+							</ol>
+							<hr>
+							</div>
+
 					</div>
 
 
