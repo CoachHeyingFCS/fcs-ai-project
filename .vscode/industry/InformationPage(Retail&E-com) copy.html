@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #11a7d0;  
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #11a7d0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://images.prismic.io//intuzwebsite/53daf5ca-751e-4564-bb48-783955769208_Banner%402x.png?w=1200&q=75&auto=format,compress&fm=png8') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 3s;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* CSS Enhancements */
+.intro {
+    background-color: #f0f4f8; /* Light background color for better contrast */
+    padding: 20px; /* Add some padding for breathing space */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.intro .content {
+    max-width: 600px; /* Limit content width for readability */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center-align the text */
+}
+
+.intro h2 {
+    color: #2c3e50; /* Darker shade for the heading */
+    font-size: 2em; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+.intro p {
+    color: #34495e; /* Slightly lighter shade for the paragraph */
+    font-size: 1.2em; /* Increase font size for readability */
+    line-height: 1.5; /* Improved line height for readability */
+}
+
+
+.features {
+    background: linear-gradient(135deg, #079c9eda, #01ffffce);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1 1 30%;
+    margin: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.feature:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.feature i {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #0099ffd9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 99.27%;
+    border-style: groove;
+    border-width: thick;
+    border-color:#0099ffd1;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.new{
+    margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+</style>
+<header>
+    <nav>
+        <ul>               
+            <li><a href="..//index.html">Home</a></li>
+            <li><a href="./retailecom.html">Retail Page</a></li>
+            <li><a href="./about us.html">About us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>An application of AI in Retail and E-commerce</h1>
+            <p>Personalized Recommendations: Tailoring Your Shopping Experience</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="content">
+            <h2>What Are Personalized Recommendations?</h2>
+            <p>One of the most significant ways technology is changing retail and online shopping is through Personalized Recommendations. Essentially, these are smart computer programs that look at what you've browsed, what you've bought before, what you've searched for, and even how long you linger on certain product pages. By gathering this information, they build a picture of what each shopper might like. The main idea is to make finding products easier and more relevant, helping you discover items you'll truly appreciate and ultimately encouraging you to make purchases.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="content">
+             <div class="feature">
+<i class="fas fa-lock fa-3x"></i>
+                <h3>Data and Security Concerns</h3>
+                <p>The effectiveness of personalized recommendations relies heavily on the collection and analysis of extensive personal data. This raises significant data privacy concerns, as companies gather detailed insights into individuals' preferences, habits, and even inferred personal traits, which may not be explicitly shared by the user. The vast databases storing this sensitive information are also prime targets for security breaches. A data compromise could expose users' shopping histories, preferences, and potentially other linked personal details, leading to risks such as identity theft, targeted phishing attacks, or reputational damage. Ensuring the secure storage and ethical handling of this data is paramount to maintaining user trust.</p>
+            </div>
+            <div class="feature">
+<i class="fas fa-exclamation-triangle fa-3x"></i>                <h3>Negative Impacts</h3>
+                <p>Despite these benefits, personalized recommendations also have drawbacks. In terms of culture and society, they can sometimes create a situation where you are mostly shown things that confirm what you already know or like. This can limit your exposure to new ideas, different styles, or a wider variety of products, potentially making people's views narrower and leading to more similar buying habits. In the economy, when big companies have access to more data, it can make it harder for smaller businesses to compete. For the environment, these systems can unintentionally encourage people to buy more than they need, leading to increased production and more waste. Additionally, if the information used to make recommendations contains biases, it can make existing social differences worse.</p>
+            </div>
+            <div class="feature">
+<i class="fas fa-check-circle fa-3x"></i>                <h3>Positive Impacts</h3>
+                <p>These personalized suggestions offer many advantages. For businesses, they help drive more sales and revenue by making it more likely that people will buy something and spend more when they do. They also make advertising more effective because it can be shown to the right people. For shoppers, these systems can make the entire shopping experience much easier by saving time and effort in finding products they genuinely need or might like, which is especially helpful when looking for hard-to-find items. In terms of the environment, by helping people find the right products more efficiently, there can be fewer unplanned purchases and fewer returned items, which means less waste from making, shipping, and disposing of products.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© Untitled. All rights reserved  │  Design: HTML5 UP</p>
+</footer>
+
+</body>
+</html>
