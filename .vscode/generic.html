@@ -6,12 +6,43 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>Information Page</title>
 		<link rel="icon" type="image/x-icon" href="images/Innovation Academy Phoenix.svg">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		body {
+			background-color: rgb(0, 0, 0);
+		}
+
+		h2 {
+			font-family: "arial", sans-serif;
+			color: rgb(0, 0, 255);
+		}
+		
+		p {
+			color: rgb(255, 255, 255);
+			font-family: "arial", sans-serif;
+		}
+		.image.main img {
+			border-style: dotted;
+			border-width: 2px;
+			border-color: rgb(100, 0, 255);
+		}
+		img {
+			border-style: dotted;
+			border-width: 2px;
+			border-color: rgb(100, 0, 255);
+		}
+		h3 {
+			color:rgb(255, 0, 0)
+			
+		}
+	
+		</style>
+			
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -22,9 +53,7 @@
 						<div class="inner">
 
 							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
+								
 
 							<!-- Nav -->
 								<nav>
@@ -41,66 +70,111 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="industry/legal.html">Landing Page</a></li>
+							<li><a href="elements.html">About the Authors</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Generic Page</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+
+							<center><h1>Information Page</h1></center>
+							<span class="image main"><img src="industry/ai application.jpg" alt="" /></span>
+							<center><strong><h2>COMPAS Overview</h2></strong></center>
+							<ul>
+								<li>COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) is a risk assessment software used by courts and correctional departments in the United States.</li>
+								<li>Its primary application is to predict the likelihood that a criminal defendant will re-offend (recidivate). Judges, probation officers, and parole boards use its risk scores to inform critical decisions about bail, sentencing, probation terms, and parole eligibility</li>
+								<li> It is a classic example of a predictive analytics tool designed to add a data-driven, "objective" layer to the criminal justice process.</li>
+							</ul>
+							<center><img src="industry/compas real.jpg" alt=""></center>
+
+							<hr>
+							<center><h2>Potential Data/Security Risks</h2></center>
+							<center><h3>1. Data Quality and Bias</h3></center>
+							<ul>
+								<li>The algorithm relies on historical crime data and a 137-question survey given to defendants</li>
+								<li>Historical crime data is often a reflection of policing biases (e.g., over-policing in certain neighborhoods), meaning the data itself is skewed</li>
+								<li>The survey includes questions about a defendant's family criminal history, financial stability, and social circle, which can proxy for race and socioeconomic status</li>
+								<li>Garbage in, garbage out: if the training data reflects societal biases, the algorithm will learn and amplify them</li>
+							</ul>
+							<hr>
+							<center><h3>2. Lack of Transparency</h3></center>
+							<ul>
+								<li>Northpointe (the creator) considered the algorithm a proprietary trade secret</li>
+								<li>This means the exact factors and their weightings are not public.</li>
+								<li>Defendants cannot challenge or even understand the "evidence" against them, violating principles of due process and transparency</li>
+								<li>Judges are also left making life-altering decisions based on a score they cannot explain.</li>
+							</ul>
+							<hr>
+							<center><h3>3. Data Security and Misuse</h3></center>
+							<ul>
+								<li>The sensitive data collected (personal history, criminal records, psychological responses) is a prime target for breaches</li>
+								<li>Furthermore, there is a risk of "function creep," where the data collected for one purpose (recidivism risk) is later used for another, unintended purpose without consent.</li>
+							</ul>
+							<center><img src="industry/bias.webp" alt=""></center>
+							<hr>
+							<center><h2>Positive Impact </h2></center>	
+							<center><h3>1. Reducing Subjective Bias</h3></center>
+								<ul>
+									<li>The core idea was to counteract known human biases—such as a judge's implicit racial or socioeconomic prejudices—by providing a standardized, data-driven assessment for every defendant. In theory, this would lead to more consistent outcomes.</li>
+								</ul>
+								<hr>
+							<center><h3>2. Improving Efficiency and Public Safety</h3></center>
+							<ul>
+								<li>By accurately identifying individuals who pose a genuine high risk to society, the system could better allocate limited prison and supervisory resources to them.</li>
+								<li>Conversely, it could safely recommend against incarcerating low-risk individuals, reducing prison overcrowding and minimizing the harmful effects of unnecessary imprisonment on individuals and families.</li>
+							</ul>
+							<center><img src="industry/risk management.png" alt=""></center>
+							<hr>
+
+							<center><h2>Negative Impact</h2></center>
+							<center><h3>1. Reinforcement of Systemic Bias</h3></center>
+							<ul>
+								<li>As revealed by ProPublica's investigation, the algorithm was not neutral.</li>
+								<li>It produced significantly more false positives (labeling someone as high-risk when they did not re-offend) for Black defendants and more false negatives (labeling someone as low-risk when they did re-offend) for white defendants</li>
+								<li>This meant it was disproportionately harsh on Black communities, leading to longer sentences and denied paroles based on flawed predictions.</li>
+							</ul>
+							<hr>
+							<center><h3>2. The Objective Facade</h3></center>
+							<ul>
+								<li>Perhaps the most damaging impact was that the algorithm's verdict was perceived as scientific and impartial</li>
+								<li>This "automation bias" caused judges to trust the algorithm's score over their own judgment, lending a powerful, seemingly legitimate cover to deeply biased outcomes</li>
+								<li>This eroded trust in the judicial system and perpetuated a cycle of discrimination on a massive scale</li>
+							</ul>
+							<hr>
+							<center><h3>3. Economic and Social Cost</h3></center>
+							<ul>
+								<li> Individuals incorrectly labeled as high-risk faced devastating consequences: prolonged incarceration, inability to get jobs post-release, and broken families</li>
+								<li>This carries a massive economic cost for the state (cost of incarceration) and for the communities affected, which are deprived of income-earners and parents, further entrenching cycles of poverty and crime.</li>
+							<center><img src="industry/bias real.jpg" alt=""></center>
+								<hr>
+							</ul>
+							<center><h2>Works Cited</h2></center>
+							<ol>
+								<li>Carnegie Mellon University. Homework 12: COMPAS Revisited. Retrieved from
+https://www.stat.cmu.edu/~cshalizi/dm/22/hw/12/hw-12.pdf </li>
+<li>Diefes, Aaron; Liu, Joy; Sauter, Josh. Algorithmic Risk Assessment in Criminal Justice
+Systems: Analyzing Bias in COMPAS. Duke University. Retrieved
+from https://sites.duke.edu/compasriskassessment/ </li>
+<li>Ji, Jessica. The U.S. Government Wants to Go ‘All In’ on AI. There Are Big
+Risks. Center for Security and Emerging Technology, Georgetown University.
+Retrieved from https://cset.georgetown.edu/article/the-u-s-government-wants-togo-all-in-on-ai-there-are-big-risks/ </li>
+<li>Kerry, Cameron F. Protecting Privacy in an AI-Driven World. Brookings Institution.
+Retrieved from https://www.brookings.edu/articles/protecting-privacy-in-an-aidriven-world/ </li>
+<li>King, Jennifer & Meinhardt, Caroline. Privacy in an AI Era: How Do We Protect Our
+Personal Information? Stanford University Human-Centered AI Institute. Retrieved
+from https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-ourpersonal-information </li>
+<li>Washington, Anne L. How to Argue with an Algorithm: Lessons from the COMPASProPublica Debate. University of Colorado Law Review. Retrieved
+from http://ctlj.colorado.edu/wp-content/uploads/2021/02/17.1_4-
+Washington_3.18.19.pdf </li>
+							</ol>
+							<hr>
+							</div>
+
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
 
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

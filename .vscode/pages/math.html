@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI in the Mathematics Industry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --primary: #181c24;
+            --accent: #00c3ff;
+            --bg: #10131a;
+            --card: #23283a;
+            --shadow: 0 4px 24px rgba(0,0,0,0.25);
+            --text: #e0e6f0;
+            --text-light: #b0b8c9;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background: linear-gradient(90deg, #23283a 60%, #00c3ff 100%);
+            color: #fff;
+            padding: 2.5rem 0 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        header .logo i {
+            font-size: 2.2rem;
+            color: #00c3ff;
+            background: #23283a;
+            border-radius: 50%;
+            padding: 0.5rem;
+        }
+        nav {
+            margin-top: 1.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffe082;
+        }
+        .hero {
+            margin: 2rem auto 0 auto;
+            max-width: 900px;
+            background: var(--card);
+            box-shadow: var(--shadow);
+            border-radius: 1.5rem;
+            padding: 2.5rem 2rem 2rem 2rem;
+            text-align: center;
+            animation: fadeIn 1.2s;
+            color: var(--text);
+        }
+        .hero img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.2rem;
+            border: 3px solid var(--accent);
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+        }
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+        main {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 900px) {
+            main { grid-template-columns: 1fr; }
+        }
+        section {
+            background: var(--card);
+            box-shadow: var(--shadow);
+            border-radius: 1.2rem;
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s;
+            color: var(--text);
+            position: relative;
+            overflow: hidden;
+        }
+        section .section-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 12px;
+            float: right;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid var(--accent);
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+        }
+        ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 0.7rem;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+        footer {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0 1rem 0;
+            margin-top: 2rem;
+            border-radius: 1.2rem 1.2rem 0 0;
+        }
+        .socials {
+            margin: 1rem 0;
+        }
+        .socials a {
+            color: #00c3ff;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+        }
+        .socials a:hover {
+            color: #ffe082;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-brain"></i> AI & Mathematics
+        </div>
+        <nav>
+      <a href="../index.html">Back</a>
+      <a href="math.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="about.html">About Us</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="https://i.pinimg.com/736x/c4/eb/1f/c4eb1f8e82d21b11d5dd1345f8bf3061.jpg?auto=format&fit=facearea&w=400&q=80" alt="AI and Mathematics" />
+        <h1>The Effect of AI on the Mathematics Industry</h1>
+        <p>
+            Explore how artificial intelligence is transforming mathematics, from research and education to privacy and ethics.
+        </p>
+    </div>
+    <main>
+        <section id="usages">
+            <img class="section-img" src="https://i.happymodpro.com/upload/android/icon/2025/07/20/589d0b754aa91b111cf39200f383a7f5.webp?auto=format&fit=crop&w=200&q=80" alt="AI Usages" />
+            <h2><i class="fas fa-cogs"></i> First AI Usage In Mathematics</h2>
+            <ul>
+                <li>In 1961, James Slagle, a doctoral student at MIT and protégé of AI pioneer Marvin Minsky, developed one of the earliest expert systems in artificial intelligence: SAINT (Symbolic Automatic Integrator). SAINT was designed to emulate human decision-making in solving symbolic integration problems, a fundamental task in calculus. Written in LISP, the program applied heuristic methods to mimic the reasoning process of a college-level student. It was tested on 86 problems, including 54 from MIT freshman calculus exams, and successfully solved all but two problems. This achievement demonstrated that AI could handle complex symbolic manipulation tasks, marking a significant milestone in the intersection of mathematics and artificial intelligence. SAINT's development at the Lawrence Radiation Laboratory (now Lawrence Livermore National Laboratory) also signaled the beginning of institutional AI research in mathematical domains, laying the groundwork for future systems that would integrate deductive and inductive reasoning in problem-solving .
+                </li>
+            </ul>
+        </section>
+        <section id="privacy">
+            <img class="section-img" src="https://i.pinimg.com/736x/5f/35/da/5f35dacf95fb235f068545c959898333.jpg?auto=format&fit=crop&w=200&q=80" alt="Privacy Concerns" />
+            <h2><i class="fas fa-user-secret"></i> History and Evolution of AI in the Mathematics Industry</h2>
+            <ul>
+                <li>The Evolution of AI in the Mathematics Industry
+                    Artificial Intelligence has transformed the mathematics industry from basic computational assistance into a deeply collaborative problem-solving partner. Over the decades, its role has expanded from performing simple calculations to driving advanced theorem proving, modeling, and even creative mathematical discovery.
+                    This evolution reflects a shift from AI as a passive assistant to a creative collaborator, reshaping how mathematicians approach both practical applications and theoretical frontiers.
+                    </li>
+                <li>1970s-1990s: Early integration began with computers handling repetitive numerical tasks and verifying proofs. While skepticism remained, this era set the foundation for computational mathematics, allowing mathematicians to offload tedious processes.</li>
+                <li>2000s-2010s: AI methods such as neural networks and symbolic computation started aiding in pattern recognition, optimization problems, and algorithmic discovery. Automated theorem provers and computer algebra systems became more sophisticated, enhancing research efficiency.</li>
+                <li>2020s-Present: Machine learning models, especially large language and reasoning models, began tackling high-level mathematical challenges. Today, AI can decompose complex problems, assist in pure and applied research, and support education through interactive learning tools. Initiatives like DARPA's “expMath” aim to create AI “coauthors” for mathematicians, signaling a future where AI actively contributes to breakthroughs previously deemed unattainable.</li>
+            </ul>
+        </section>
+        <section id="usaging">
+            <img class="section-img" src="https://cdn5.vectorstock.com/i/1000x1000/97/24/growing-graph-line-icon-on-black-background-vector-25959724.jpg?auto=format&fit=crop&w=200&q=80" alt="Industry Impact" />
+            <h2><i class="fas fa-chart-line"></i> Level of AI Usage in The Mathematics Industry</h2>
+            <ul>
+                <li>  The level of AI usage in the mathematics industry is high. 
+                    AI usage in the mathematics industry is currently at a high level. While AI has not yet reached the point of independently solving the most abstract mathematical problems, it is significantly transforming how mathematics is taught, researched, and applied. AI is now a powerful collaborator in education, research, and advanced problem-solving, with rapid progress being made in each area.
+                </li>
+                <li>
+                    Example 1: AI in Mathematics Education - Adaptive Learning and Intelligent Tutoring Systems
+                    Description:
+                    AI is widely used in mathematics education through intelligent tutoring systems, adaptive learning platforms, and virtual environments. These tools personalize instruction, provide real-time feedback, and enhance engagement. Countries like China, Korea, and India have already integrated such AI tools into their national curricula.
+                </li>
+                <li>
+                    Example 2: AI in Mathematical Research - Theorem Proving and Experimental Mathematics
+                    Description:
+                    AI tools like DeepSeek and o4-mini have demonstrated the ability to solve complex mathematical problems, including Ph.D.-level number theory questions. These tools are now being used in experimental mathematics and are capable of producing valid proofs, sometimes faster than human mathematicians.
+                </li>
+                <li>
+                    Example 3: AI in Advanced Problem Solving - Large Reasoning Models and FrontierMath
+                    Description:
+                    Large reasoning models (LRMs) like OpenAI's o3 and DeepMind's AlphaProof have achieved high scores on the American Invitational Mathematics Examination (AIME) and even solved previously unsolved math puzzles. The development of new benchmarks like FrontierMath is pushing AI to tackle novel, complex problems, indicating rapid progress in AI’s mathematical reasoning capabilities.
+                </li>
+                <li>
+                    Example 4: AI in Mathematical Modeling - Machine Learning in Theoretical Research
+                    Description:
+                    Machine learning is being used to tackle complex mathematical problems such as the Riemann Hypothesis and knot theory. At Caltech, researchers are using AI to analyze high-dimensional mathematical structures and develop new algorithms, showing that AI is becoming a tool for both solving and formulating mathematical theories.
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        &copy; 2025 AI & Mathematics Information Hub
+    </footer>
+</body>
+</html>

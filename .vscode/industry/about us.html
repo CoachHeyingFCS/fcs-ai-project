@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Base styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #333;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header, footer {
+    background-color: #007BFF; /* Vibrant blue */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+nav {
+    background-color: #FF5733; /* Bright orange */
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 1em 1em;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #FFA07A; /* Lighter orange on hover */
+}
+
+main {
+    padding: 2em;
+    margin-top: 120px;
+}
+
+form {
+    background-color: #E6E6FA; /* Light lavender */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Header styling */
+header {
+    background-color: #0066ff; /* Use a vibrant blue for the header */
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999.5;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #0000ff; /* Use a bright orange for the navigation bar */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    margin-top: 50px;
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 999;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00cccc; /* Use a lighter orange for hover effect */
+}
+
+/* Main content styling */
+main {
+    padding: 2em;
+    margin-top: 120px;
+    background-color: #33ccff; /* Use a light lavender background */
+    min-height: 80vh;
+}
+
+/* Footer styling */
+footer {
+    background-color: #007BFF; /* Match the header color */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section headers */
+h2 {
+    color: 	#000099; /* Use the same blue as the header for consistency */
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 0.5em;
+}
+h1 {
+    line-height: 1;
+    
+}
+
+/* Paragraph and link styles */
+p {
+    margin: 1em 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Image styling */
+.intro-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.styled-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFAE6; /* Light yellow background */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.styled-paragraph:hover {
+    background-color: #FFF5CC; /* Slightly darker yellow on hover */
+    color: #000;
+}
+
+
+header, footer {
+    background-color: #68cbfc; /* Vibrant blue */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+
+form {
+    background-color: #E6E6FA; /* Light lavender */
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, input, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+    </style>
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="..//index.html">Home</a>
+            <a href="./retailecom.html">Retail Page</a>
+            <a href="./InformationPage(Retail&E-com) copy.html">Information Page</a>
+    </nav>
+    <main>
+        <h2>Creators</h2>
+        <img src="" class="intro-image">
+        <p class="styled-paragraph">Pavan</p>
+        <img src="" class="intro-image">
+        <p class="styled-paragraph"> Krishna </p>
+    </main>
+<h2>Have Questions? Contact Us!</h2> <p>If you have any questions, feel free to contact us at: <a href="mailto:@gmail.com">@gmail.com</a></body>
+</html>
