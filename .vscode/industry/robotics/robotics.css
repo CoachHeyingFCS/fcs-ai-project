@@ -3550,13 +3550,12 @@ input, select, textarea {
     transition: font-size 0.3s cubic-bezier(.23,1.01,.32,1), color 0.3s, letter-spacing 0.3s, text-shadow 0.3s;
     position: relative;
     z-index: 1;
-}
-.ai-title:hover {
-    /*font-size: 2.8em;*/
+	/*font-size: 2.8em;*/
     color: #b3e0ff;
     /*letter-spacing: 0.16em;*/
     text-shadow: 0 4px 48px #6ecaff, 0 0px 32px #232b45;
 }
+
 
 .ai-desc {
     font-size: 1.3em;
