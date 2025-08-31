@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #11a7d0;  
+    background-color: #000000;  
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -134,7 +134,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #0099ffd9;
+    background-color: #000000d9;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -157,6 +157,41 @@ footer {
 }
 .new{
     margin: 0; padding: 0; height: 100vh; display: flex; justify-content: center; align-items: center;
+}
+.feature-modal-bg {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.feature-modal-bg.active {
+  display: flex;
+}
+.feature-modal-content {
+  background: #222831;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 90vw;
+  box-shadow: 0 0 40px #000a;
+  text-align: left;
+  position: relative;
+}
+.feature-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+.feature {
+  cursor: pointer;
 }
 
     </style>
@@ -192,7 +227,7 @@ footer {
             <p>One of the most significant ways technology is changing retail and online shopping is through Personalized Recommendations. Essentially, these are smart computer programs that look at what you've browsed, what you've bought before, what you've searched for, and even how long you linger on certain product pages. By gathering this information, they build a picture of what each shopper might like. The main idea is to make finding products easier and more relevant, helping you discover items you'll truly appreciate and ultimately encouraging you to make purchases.</p>
         </div>
     </section>
-
+<!--
     <section class="features">
         <div class="content">
              <div class="feature">
@@ -210,6 +245,161 @@ footer {
             </div>
         </div>
     </section>
+<div id="featureModal" class="feature-modal-bg" onclick="hideFeatureModal(event)">
+  <div class="feature-modal-content" id="featureModalContent">
+    <span class="feature-modal-close" onclick="hideFeatureModal(event)">&times;</span>
+  </div>
+</div>
+-->
+<!-- Remove the <p> text from each .feature and add data-text attribute -->
+<section class="features">
+    <div class="content">
+        <div class="feature" data-text="The effectiveness of personalized recommendations relies heavily on the collection and analysis of extensive personal data. This raises significant data privacy concerns, as companies gather detailed insights into individuals' preferences, habits, and even inferred personal traits, which may not be explicitly shared by the user. The vast databases storing this sensitive information are also prime targets for security breaches. A data compromise could expose users' shopping histories, preferences, and potentially other linked personal details, leading to risks such as identity theft, targeted phishing attacks, or reputational damage. Ensuring the secure storage and ethical handling of this data is paramount to maintaining user trust.">
+            <i class="fas fa-lock fa-3x"></i>
+            <h3>Data and Security Concerns</h3>
+        </div>
+        <div class="feature" data-text="Despite these benefits, personalized recommendations also have drawbacks. In terms of culture and society, they can sometimes create a situation where you are mostly shown things that confirm what you already know or like. This can limit your exposure to new ideas, different styles, or a wider variety of products, potentially making people's views narrower and leading to more similar buying habits. In the economy, when big companies have access to more data, it can make it harder for smaller businesses to compete. For the environment, these systems can unintentionally encourage people to buy more than they need, leading to increased production and more waste. Additionally, if the information used to make recommendations contains biases, it can make existing social differences worse.">
+            <i class="fas fa-exclamation-triangle fa-3x"></i>
+            <h3>Negative Impacts</h3>
+        </div>
+        <div class="feature" data-text="These personalized suggestions offer many advantages. For businesses, they help drive more sales and revenue by making it more likely that people will buy something and spend more when they do. They also make advertising more effective because it can be shown to the right people. For shoppers, these systems can make the entire shopping experience much easier by saving time and effort in finding products they genuinely need or might like, which is especially helpful when looking for hard-to-find items. In terms of the environment, by helping people find the right products more efficiently, there can be fewer unplanned purchases and fewer returned items, which means less waste from making, shipping, and disposing of products.">
+            <i class="fas fa-check-circle fa-3x"></i>
+            <h3>Positive Impacts</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for enlarged feature text -->
+<div id="featureModal" class="feature-modal-bg" onclick="hideFeatureModal(event)">
+  <div class="feature-modal-content" id="featureModalContent">
+    <span class="feature-modal-close" onclick="hideFeatureModal(event)">&times;</span>
+  </div>
+</div>
+<!-- Update JS to show text only in modal -->
+<script>
+const features = document.querySelectorAll('.feature');
+const modal = document.getElementById('featureModal');
+const modalContent = document.getElementById('featureModalContent');
+
+function showFeatureModal(idx) {
+  const feature = features[idx].cloneNode(true);
+  feature.removeAttribute('onclick');
+  const text = features[idx].getAttribute('data-text');
+  modalContent.innerHTML = '<span class="feature-modal-close" onclick="hideFeatureModal(event)">&times;</span>';
+  modalContent.appendChild(feature);
+  if (text) {
+    const p = document.createElement('p');
+    p.textContent = text;
+    modalContent.appendChild(p);
+  }
+  modal.classList.add('active');
+}
+
+function hideFeatureModal(e) {
+  if (e.target === modal || e.target.classList.contains('feature-modal-close')) {
+    modal.classList.remove('active');
+  }
+}
+
+features.forEach((feature, idx) => {
+  feature.onclick = () => showFeatureModal(idx);
+});
+function showFeatureModal(idx) {
+  const feature = features[idx].cloneNode(true);
+  feature.removeAttribute('onclick');
+  const text = features[idx].getAttribute('data-text');
+  modalContent.innerHTML = '<span class="feature-modal-close" onclick="hideFeatureModal(event)">&times;</span>';
+
+  // Add images based on feature index
+  let img = null;
+  if (idx === 0) {
+    img = document.createElement('img');
+    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGTMA884LZxRndYPhzzZE15knIN2Fq7ZBig&s";
+    img.alt = "Data Security";
+    img.style.width = "300px";
+    img.style.marginLeft = "200px";
+  } else if (idx === 1) {
+    img = document.createElement('img');
+    img.src = "https://www.anolytics.ai/upload/1696585272_Cover-Page-Image-AI-in-Retail.jpg";
+    img.alt = "Negative Impacts";
+    img.style.width = "300px";
+    img.style.marginLeft = "200px";
+  } else if (idx === 2) {
+    img = document.createElement('img');
+    img.src = "https://mma.prnewswire.com/media/1081292/AI_in_Retail_Market.jpg?p=facebook";
+    img.alt = "Positive Impacts";
+    img.style.width = "300px";
+    img.style.marginLeft = "200px";
+  }
+  // Insert image after icon if applicable
+  if (img) {
+    const icon = feature.querySelector('i');
+    if (icon) icon.after(img);
+  }
+
+  modalContent.appendChild(feature);
+  if (text) {
+    const p = document.createElement('p');
+    p.textContent = text;
+    modalContent.appendChild(p);
+  }
+  modal.classList.add('active');
+}
+function showFeatureModal(idx) {
+  const feature = features[idx].cloneNode(true);
+  feature.removeAttribute('onclick');
+  const text = features[idx].getAttribute('data-text');
+  modalContent.innerHTML = '<span class="feature-modal-close" onclick="hideFeatureModal(event)">&times;</span>';
+
+  // Remove the icon from the cloned feature
+  const icon = feature.querySelector('i');
+  if (icon) icon.remove();
+
+  // Center the title (h3)
+  const title = feature.querySelector('h3');
+  if (title) {
+    title.style.textAlign = "center";
+    title.style.marginTop = "20px";
+    title.style.fontSize = "2em";
+    modalContent.appendChild(title);
+  }
+
+  // Add images based on feature index
+  let img = null;
+  if (idx === 0) {
+    img = document.createElement('img');
+    img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGTMA884LZxRndYPhzzZE15knIN2Fq7ZBig&s";
+    img.alt = "Data Security";
+  } else if (idx === 1) {
+    img = document.createElement('img');
+    img.src = "https://www.anolytics.ai/upload/1696585272_Cover-Page-Image-AI-in-Retail.jpg";
+    img.alt = "Negative Impacts";
+  } else if (idx === 2) {
+    img = document.createElement('img');
+    img.src = "https://mma.prnewswire.com/media/1081292/AI_in_Retail_Market.jpg?p=facebook";
+    img.alt = "Positive Impacts";
+  }
+  if (img) {
+    img.style.width = "410px";
+    img.style.marginLeft = "100px";
+    img.style.display = "block";
+    img.style.marginTop = "20px";
+    modalContent.appendChild(img);
+  }
+
+  // Add the text
+  if (text) {
+    const p = document.createElement('p');
+    p.textContent = text;
+    p.style.textAlign = "center";
+    p.style.marginTop = "30px";
+    p.style.fontSize = "1.2em";
+    modalContent.appendChild(p);
+  }
+  modal.classList.add('active');
+}
+</script>
+
 </main>
 
 <footer>
